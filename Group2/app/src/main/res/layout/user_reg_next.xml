@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_login">
+
+    <LinearLayout
+        android:id="@+id/user_regnext_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/user_reg_next_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_rect01"
+            android:src="@drawable/test" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFFFF"
+            android:text="请填写真实信息~"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_regnext_ll"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/user_reg_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/round_rect"
+            android:textColorHint="#FFFFFFFF"
+            android:textColor="#FFFFFFFF"
+            android:hint="姓名"
+            android:textCursorDrawable="@drawable/white_cursor"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFFFF"
+                android:text="性别"
+                android:textCursorDrawable="@drawable/white_cursor"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/user_reg_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/user_reg_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:textColor="#FFFFFFFF"
+                    android:text="男"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/user_reg_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFFFF"
+                    android:text="女"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/user_reg_sexnone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="不告诉你"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_reg_college"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/round_rect"
+            android:hint="学校"
+            android:textCursorDrawable="@drawable/white_cursor"
+            android:textColorHint="#FFFFFFFF"
+            android:textColor="#FFFFFFFF"/>
+
+        <EditText
+            android:id="@+id/user_reg_campus"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_rect"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@drawable/white_cursor"
+            android:hint="校区"
+            android:textColorHint="#FFFFFFFF"
+            android:textColor="#FFFFFFFF"/>
+
+        <EditText
+            android:id="@+id/user_reg_academy"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_rect"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@drawable/white_cursor"
+            android:hint="学院"
+            android:textColorHint="#FFFFFFFF"
+            android:textColor="#FFFFFFFF"/>
+        <EditText
+            android:id="@+id/user_reg_grade"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_rect"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@drawable/white_cursor"
+            android:hint="年级"
+            android:textColorHint="#FFFFFFFF"
+            android:textColor="#FFFFFFFF"/>
+        <EditText
+            android:id="@+id/user_reg_major"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_rect"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@drawable/white_cursor"
+            android:hint="专业"
+            android:textColorHint="#FFFFFFFF"
+            android:textColor="#FFFFFFFF"/>
+        <EditText
+            android:id="@+id/user_reg_stuID"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_rect"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@drawable/white_cursor"
+            android:hint="学号"
+            android:textColorHint="#FFFFFFFF"
+            android:textColor="#FFFFFFFF"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/user_reg_btcomplete"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_rect"
+            android:text="完成"
+            android:textColor="#FFFFFFFF"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/splash">
+    <LinearLayout
+        android:id="@+id/splash_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="98dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <ImageButton
+            android:id="@+id/splash_btlogin"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btlogin"
+            android:layout_weight="1" />
+        <ImageButton
+            android:id="@+id/splash_btreg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btreg"/>
+    </LinearLayout>
+</RelativeLayout>

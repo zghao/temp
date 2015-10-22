@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_left">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF">
+
+        <LinearLayout
+            android:id="@+id/main_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/main_btsquare"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableTop="@drawable/square"
+                android:text="广场"
+                android:textColor="#FF18B4EC"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/main_btcorpshow"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableTop="@drawable/show2"
+                android:text="社团秀"
+                android:textColor="#FFABABAB"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/main_btlaunch"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/launch" />
+
+            <Button
+                android:id="@+id/main_btpershow"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableTop="@drawable/person2"
+                android:text="个人"
+                android:textColor="#FFABABAB"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/main_btnest"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableTop="@drawable/nest2"
+                android:text="小窝"
+                android:textColor="#FFABABAB"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/main_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#FFABABAB"
+            android:layout_above="@id/main_ll"/>
+        <FrameLayout
+            android:id="@+id/main_fl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/main_tv">
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <com.example.group.View.leftmenu
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"></com.example.group.View.leftmenu>
+</android.support.v4.widget.DrawerLayout>

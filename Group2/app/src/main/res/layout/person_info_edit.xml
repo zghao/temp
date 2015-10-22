@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FF18B4EC">
+
+        <Button
+            android:id="@+id/person_info_edit_btback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑个人信息"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/person_info_edit_btsave"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:textColor="#FFFFFFFF"
+            android:text="保存"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/person_info_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="昵称" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="小明"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="真实姓名" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="XXX"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="性别" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="男"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="学校" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_college"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="XX大学"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="校区" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_campus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="XX校区"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="学院" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_academy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="XX学院"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="年级" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="2013级"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="专业" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_major"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="XX专业"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="学号" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_stuID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="123456789"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFABABAB"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="手机号" />
+
+                <EditText
+                    android:id="@+id/person_info_edit_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="15588888888"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

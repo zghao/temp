@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/round_rect04">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/person_show_lv_UserHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_hint"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/person_show_lv_UserHead">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/person_show_lv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:text="文学社"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/person_show_lv_btfocus"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#FFFFFFFF"
+                    android:drawableLeft="@drawable/add_focus"
+                    android:text="关注"
+                    android:textSize="12sp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/person_show_lv_shorrtintro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="skfjfjlsdkjfskldfjlskfdsslkdfjfljflsd"
+                android:textColor="#815F3D"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#FFABABAB" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="热度"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/person_show_lv_tvhot"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="12sp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#FFABABAB" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="标签"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/person_show_lv_tvtab"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="12sp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#FFABABAB" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="参加社团"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/person_show_lv_tvcorp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="12sp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#FFABABAB" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="参与活动"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/person_show_lv_tvact"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="12sp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#FFABABAB" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+        <Button
+            android:id="@+id/person_show_lv_btcollect"
+            android:background="#FFFFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="收藏"/>
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#FFABABAB" />
+        <Button
+            android:id="@+id/person_show_lv_btlike"
+            android:background="#FFFFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="0"/>
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#FFABABAB" />
+        <Button
+            android:id="@+id/person_show_lv_btfocusnum"
+            android:background="#FFFFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="关注人数    0"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
